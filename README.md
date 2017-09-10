@@ -5,15 +5,6 @@ Feeds are being updated by the [systemd daemon](https://tt-rss.org/gitlab/fox/tt
 
 Currently this bundle is made to work with PostgreSQL.
 
-## Compatibility
-
-This bundle has been tested on the following systems:
-
-| OS          | `[x]` |
-| ----------- | ----- |
-| Fedora 24   | `[x]` |
-| Fedberry 24 | `[x]` |
-
 ## Requirements
 
 * nginx, an open-source webserver
