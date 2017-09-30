@@ -73,7 +73,5 @@ files = {
 }
 
 svc_systemd = {
-    'tt-rss': {
-        'enabled': True,
-    },
+    'tt-rss': {},
 }
