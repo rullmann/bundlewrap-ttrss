@@ -40,9 +40,7 @@ directories = {
 
 git_deploy = {
     '{}'.format(ttrss_install_path): {
-        'needs': [
-            'directory:{}'.format(ttrss_install_path),
-        ],
+        'needs': ['directory:{}'.format(ttrss_install_path)],
         'repo': 'https://tt-rss.org/git/tt-rss.git',
         'rev': 'master',
     },
