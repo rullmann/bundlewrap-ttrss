@@ -63,7 +63,6 @@ files = {
     },
     "/etc/systemd/system/tt-rss.service": {
         'source': "tt-rss.service",
-        'owner': "root",
         'mode': "0644",
         'content_type': "mako",
         'context': {
