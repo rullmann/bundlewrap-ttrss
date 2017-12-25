@@ -1,0 +1,9 @@
+# tt-rss
+
+  check process tt-rss
+    matching "${ttrss_install_path}/update_daemon2.php"
+    start program = "/usr/bin/systemctl start tt-rss.service"
+    stop program  = "/usr/bin/systemctl stop tt-rss.service"
+    if cpu > 5% for 2 cycles then alert
+    if cpu > 10% for 5 cycles then restart
+    if 3 restarts within 5 cycles then timeout

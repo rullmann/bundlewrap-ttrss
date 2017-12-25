@@ -82,3 +82,14 @@ files = {
         },
     },
 }
+
+if node.has_bundle('monit'):
+    files['/etc/monit.d/tt-rss'] = {
+        'source': 'monit',
+        'mode': '0600',
+        'content_type': 'mako',
+        'context': {
+            'ttrss_install_path': ttrss_install_path,
+        },
+        'triggers': ['svc_systemd:monit:restart'],
+    }
